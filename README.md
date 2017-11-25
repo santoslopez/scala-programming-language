@@ -1,37 +1,37 @@
-## Welcome to GitHub Pages
+## Aprendiendo programación en el lenguaje Scala
 
-You can use the [editor on GitHub](https://github.com/santoslopez/scala-programming-language/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+La estructura de programación del lenguaje Scala es similar a Java y de está forma no debería ser un problema para nuestros amigos que llevan tiempo programando en Java, aunque es fácil de aprender sino sea tenido experiencia en este hermoso mundo de la programación, pueden buscar vídeos tutoriales en [Youtube](https://www.youtube.com/watch?v=e2E7D7DTzKw) 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Instalando lo necesario
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Si nuestro sistema operativo es Ubuntu deben instalar lo siguiente:
 
 ```markdown
-Syntax highlighted code block
+santoslopez@harvard:~$ sudo apt-get install scala
+[sudo] password for santoslopez: 
 
-# Header 1
-## Header 2
-### Header 3
+Seguramente les pide que ingresen su contraseña, una vez puesto empezara con la descarga de los archivos y los instalara, esto nos va servir para poder compilar nuestros archivos.scala
 
-- Bulleted
-- List
+```
+Si nuestro sistema operativo es Windows (o cualquier otro) probablemente te interese descargar el archivo para su instalación desde el sitio oficial de [Scala](https://www.scala-lang.org/download/).
 
-1. Numbered
-2. List
+### Compilando
 
-**Bold** and _Italic_ and `Code` text
+Para compilar nuestro archivo.scala solo necesitamos escribir lo siguiente: 
+```markdown
+santoslopez@harvard:~$ scalac HolaMundo.scala
 
-[Link](url) and ![Image](src)
+```
+Puede hacerles familiar esto, en java su equivalente es
+```markdown
+santoslopez@harvard:~$ javac HolaMundo.java
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Mostrando nuestros resultados
+Para poder visualizar lo que escribimos en el archivos necesitamos escribir lo siguiente: 
+```markdown
+santoslopez@harvard:~$  scala -classpath . HolaMundo
+```
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/santoslopez/scala-programming-language/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Nota
+Donde HolaMundo hace referencia al nombre de nuestro archivo.scala
